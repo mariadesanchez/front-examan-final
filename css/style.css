@@ -574,15 +574,15 @@ display: flex;
 
     }
     section article.uno div.boxuno div{
-        width:100vw;
+        width:375px;
         height: 110px;
      
         }
         .boxdos img{
-            width: 100%; 
+            width:375px; 
         }
         article.tres div.boxtres{
-            width: 100vw;
+            width: 375px;
         
 
         }
