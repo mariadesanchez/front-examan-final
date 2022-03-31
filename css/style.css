@@ -562,7 +562,7 @@ display: flex;
     align-items: center;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 375px) {
 
     html{
       font-size: 18px;
