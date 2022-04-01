@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+   
 }
 html {
   
@@ -9,6 +10,7 @@ html {
 }
 body{
     max-width: 1129px;
+    height: 1000px;
 }
 header{
     width: 100vw;
@@ -35,6 +37,11 @@ header div.principal nav ul{
 header div.principal nav ul li {
     margin-left: 20px;
 }
+header div.mobile {
+   display: flex;
+   justify-content: space-evenly;
+   display: none;
+}
 header button.started{
     border-style: none;
     width:150px;
@@ -53,103 +60,86 @@ header button.started:hover{
     border-radius: 50vh;
     color: black;
 }
-
 section{
-    width: 100vw;
+    margin: 0px;
+}
+.mobile{
+    width: 375px;
+    height: 200px;
+}
+
+main section div.inicio{
+     /*display: flex;
+    flex-direction: column;
+    align-self: auto;*/
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+   
+
 }
-main section div.inicio{
-     display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-}
-section article.uno{
-    width:40%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    
-    
- 
-}
+
+
 section article.uno div.boxuno h1{
     font-weight: 700, bold;
     font-style: normal;
     font-size: 40px;
     margin-bottom: 20px;
     width: 79.5%;
- 
    
    }
    section article.uno div.boxuno p{
     font-weight: 500, normal;
     font-size: 14px;
     margin-bottom: 20px;
-    margin-left: 40px;
+  
    }
 
-   section article.uno div.boxuno div{
-   width:360px;
-   height: 70px;
-
-   }
+ 
  
 
 
    section article.uno{
+    width: 450px;
+    
     background-color: white;
     display: flex;
     justify-content: flex-start;
-    width: 30%;
+
     
    }
+ section article.dos img{
+     width: 450px;
+ }
 
- 
-   section article.dos{
-    width:40%;
-    background-color: white;
-    display: flex;
-    justify-content: flex-start;
-   }
-   .boxdos img{
-    width: 80%; 
-}
-
-section article.tres{
-        background-color: white;
-        display: flex;
-        justify-content: flex-start;
-        width: 40%
-        height: 400px;
-        
-       }
- 
-
-section article.tres div.boxtres h2{
-    font-weight: 700, bold;
-    font-style: normal;
-    font-size: 30px;
-    margin-bottom: 20px;
- 
+section article.tres {
+    width:450px;
    
-   }
-   section article.tres div.boxtres p{
-    font-weight: 500, Medium;
-    font-size: 16px;
-   }
-
-   article.tres div.boxtres{
-       width: 45%;
+    }
+  section article.tres div.boxtres h1{
+     font-weight: 700, bold;
+     font-style: normal;
+     font-size: 30px;
+     margin-bottom: 20px;
+     width: 79.5%;
+    
+    }
+    section article.tres div.boxtres p{
+     font-weight: 500, normal;
+     font-size: 14px;
+     margin-bottom: 20px;
    
-   }
+    }
+    section div.list{
+        width: 450px;
+    }
    /*colocar todos los elementos en columna*/
    section article.cuatro{
+       width: 450px;
+       height: 200px;
        background: white;
-       height: 130px;
        display: flex;
-        justify-content: center;
+       justify-content: center;
       
    }
    section article.cuatro div.column{
@@ -164,11 +154,13 @@ section article.cuatro h2{
     padding-top: 10px;
    }
    section article.cuatro p{
-    width: 26vw;
+    width: 200px;
+    height: 200px;
     font-weight: 500, Normal;
     font-size: 16px;
     color: #B3B2B7;
     margin-left: 80px;
+   margin-bottom: 0px;
    }
   
    section article.cuatro div.progress div{
@@ -180,17 +172,17 @@ section article.cuatro h2{
     padding: 10px;
     margin-right: 20px;
    }
+   
    /*el span y h2 los ubico con flex en horizontal y en el inicio con flex-start*/
    section article.cinco{
-       background-color: white;
-       height: 130px;
-       text-align: left;
-       display: flex;
-       justify-content: center;
+    width: 450px;
+    height: 200px;
+    background: white;
+    display: flex;
+    justify-content: center;
    }
    section article.cuatro div.progress{
        width: 100%;
-       height: 400px;
        display: flex;
        justify-content: flex-start;
       
@@ -207,7 +199,8 @@ section article.cinco h2{
     padding-top: 10px;
    }
    section article.cinco p{
-    width: 26vw;
+    width: 200px;
+    height: 200px;
     font-weight: 500, Normal;
     font-size: 16px;
     color: #B3B2B7;
@@ -232,11 +225,11 @@ section article.cinco div.progress{
    
 }
 section article.seis{
-    background-color: white;
-    height: 180px;
-    text-align: left;
-    display: flex;
-    justify-content: center;
+       width: 450px;
+       height: 200px;
+       background: white;
+       display: flex;
+       justify-content: center;
 }
 section article.seis p{
     margin-left: 80px; 
@@ -253,7 +246,8 @@ section article.seis h2{
     padding-top: 10px;
    }
    section article.seis p{
-    width: 27vw;
+    width: 200px;
+    height: 200px;
     font-weight: 500, Normal;
     font-size: 16px;
     color: #B3B2B7;
@@ -275,12 +269,12 @@ section article.seis div.progress{
     justify-content: flex-start;
    
 }
-section article{
+/*section article{
     position: relative;
     background: #f3f3f3;
     width: 35vw;
     margin: 10px 0;
-    text-align: center;
+    text-align: center;*/
 }
 .parrafocomentarios{
     font-size: 40px;
@@ -375,7 +369,7 @@ section.comentarios article{
 }
 
 section.comentarios h2{
-    margin-bottom: 20PX;
+    margin-bottom: 20px;
 }
 
 main button.startedpie{
@@ -411,7 +405,6 @@ button.startedpie{
 
 article.uno button.started{
     border-style: none;
-    width:150px;
     background-color: #F3603B;
     padding: 12.5px 30.5px;
     border-radius: 50vh;
@@ -423,7 +416,7 @@ article.uno button.started{
     font-size: 13px;
     display: flex;
     justify-content: flex-start;
-    margin-left: 50px; 
+   
 }
 article.uno button.started:hover{
     border-style: none;
@@ -479,7 +472,6 @@ footer button.startedpie{
     width: 150px;
     height: 34px;
     background-color: white;
-    color: #F3613C;
     margin-right:220px;
     margin-top:60px;
     margin-bottom:90px;
@@ -573,19 +565,46 @@ display: flex;
         display: none;
 
     }
-    section article.uno div.boxuno div{
-        width:375px;
-        height: 110px;
-     
-        }
-        .boxdos img{
-            width: 375px; 
-        }
-        article.tres div.boxtres{
-            width: 100vw;
+    header div.mobile {
+        display: flex;
+        justify-content: space-evenly;
+        display: block;
         
-
-        }
+     }
+    
+     section article.uno div.boxuno h1{
+        font-weight: 700, bold;
+        font-style: normal;
+        font-size: 30px;
+        margin-bottom: 20px;
+        width: 79.5%;
+       
+       }
+       section article.uno div.boxuno p{
+        font-weight: 500, normal;
+        font-size: 14px;
+        margin-bottom: 20px;
+       
+       }
+        
+        /*section article.tres {
+            width: 365px;
+           
+            }
+          section article.tres div.boxtres h2{
+             font-weight: 700, bold;
+             font-style: normal;
+             font-size: 30px;
+             margin-bottom: 20px;
+             width: 79.5%;
+            
+            }
+            section article.tres div.boxtres p{
+             font-weight: 500, normal;
+             font-size: 14px;
+             margin-bottom: 20px;
+             background-color: red;
+            }
         section.comentarios div:nth-child(1) {
             display: none;
           }
@@ -594,21 +613,15 @@ display: flex;
           }
           main section div.inicio{
             display: flex;
-           justify-content:space-evenly;
-           flex-wrap: wrap;
-           display: flex;
            flex-direction: column;
-           align-items: center;
-       
-       }
-       section article.tres{
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        width: 40%
-        height: 400px;
-        
-       }
+           align-self: auto;
+       }main section div.inicio{
+     display: flex;
+    flex-direction: column;
+    align-self: auto;
+}
+
+    
 
 footer{
     width: 50vw;
