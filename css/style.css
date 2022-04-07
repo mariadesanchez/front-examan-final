@@ -3,14 +3,15 @@
     box-sizing: border-box;
     margin: 0;
    
+   
 }
 html {
   
     font-family: 'Be Vietnam', sans-serif; 
 }
 body{
-    max-width: 1129px;
-    height: 1000px;
+    max-width: 1100px;
+    height: 1440px;
 }
 header{
     width: 100vw;
@@ -60,6 +61,9 @@ header button.started:hover{
     border-radius: 50vh;
     color: black;
 }
+main section div.onlycolumn{
+   margin-left: 250px;
+}
 section{
     margin: 0px;
 }
@@ -67,6 +71,7 @@ section{
     width: 375px;
     height: 200px;
 }
+
 
 main section div.inicio{
      /*display: flex;
@@ -100,8 +105,9 @@ section article.uno div.boxuno h1{
 
 
    section article.uno{
-    width: 450px;
-    
+    width: 295px;
+    padding: 20px;
+    margin-right: 220px;
     background-color: white;
     display: flex;
     justify-content: flex-start;
@@ -109,12 +115,15 @@ section article.uno div.boxuno h1{
     
    }
  section article.dos img{
-     width: 450px;
+    width: 280px;
+    padding: 20px;
+    margin: 10px;
  }
 
 section article.tres {
-    width:450px;
-   
+    width: 295px;
+    padding: 10px;
+ 
     }
   section article.tres div.boxtres h1{
      font-weight: 700, bold;
@@ -135,8 +144,10 @@ section article.tres {
     }
    /*colocar todos los elementos en columna*/
    section article.cuatro{
-       width: 450px;
+       width: 500px;
        height: 200px;
+       padding: 10px;
+       margin: 10px;
        background: white;
        display: flex;
        justify-content: center;
@@ -154,37 +165,40 @@ section article.cuatro h2{
     padding-top: 10px;
    }
    section article.cuatro p{
-    width: 200px;
-    height: 200px;
+    width: 245px;
+    height: 130px;
     font-weight: 500, Normal;
     font-size: 16px;
     color: #B3B2B7;
-    margin-left: 80px;
-   margin-bottom: 0px;
+    margin-left: 17px;
    }
   
    section article.cuatro div.progress div{
     background-color: #F3603B;
-    width: 60px;
+    width: 50px;
     height: 40px;
     border-radius: 40%;
     color: white;
     padding: 10px;
-    margin-right: 20px;
+    margin-right: 5px;
+    margin-left: 34px;
    }
    
    /*el span y h2 los ubico con flex en horizontal y en el inicio con flex-start*/
    section article.cinco{
-    width: 450px;
-    height: 200px;
+       width: 500px;
+       height: 200px;
+       padding: 10px;
+       margin: 10px;
     background: white;
     display: flex;
     justify-content: center;
    }
    section article.cuatro div.progress{
-       width: 100%;
-       display: flex;
-       justify-content: flex-start;
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
       
    }
    section article.cinco div.column{
@@ -197,42 +211,63 @@ section article.cinco h2{
     font-weight: 700, bold;
     font-size: 16px;
     padding-top: 10px;
+    padding-right: 50px;
    }
    section article.cinco p{
-    width: 200px;
-    height: 200px;
+    width: 245px;
+    height: 130px;
     font-weight: 500, Normal;
     font-size: 16px;
     color: #B3B2B7;
-    margin-left: 80px;
+    margin-left: 17px;
    }
 
 section article.cinco div.progress div{
- background-color: #F3603B;
- width: 60px;
- height: 40px;
- border-radius: 40%;
- color: white;
- padding: 10px;
- margin-right: 20px;
+    background-color: #F3603B;
+    width: 50px;
+    height: 40px;
+    border-radius: 40%;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 34px;
+  
 
 }
 
 section article.cinco div.progress{
-    width: 100%;
+    width: 400px;
     display: flex;
     justify-content: flex-start;
    
 }
 section article.seis{
-       width: 450px;
+       width: 500px;
        height: 200px;
+       padding: 10px;
+       margin: 10px;
        background: white;
        display: flex;
        justify-content: center;
 }
 section article.seis p{
-    margin-left: 80px; 
+    width: 245px;
+    height: 130px;
+    font-weight: 500, Normal;
+    font-size: 16px;
+    color: #B3B2B7;
+    margin-left: 17px;;
+   
+}
+.unoydos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tresycuatro{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 section article.seis div.column{
     display: flex;
@@ -244,27 +279,23 @@ section article.seis h2{
     font-weight: 700, bold;
     font-size: 16px;
     padding-top: 10px;
+    margin-left: 0px;
    }
-   section article.seis p{
-    width: 200px;
-    height: 200px;
-    font-weight: 500, Normal;
-    font-size: 16px;
-    color: #B3B2B7;
-   }
+  
 
 section article.seis div.progress div{
- background-color: #F3603B;
- width: 60px;
- height: 40px;
- border-radius: 40%;
- color: white;
- padding: 10px;
- margin-right: 20px;
+    background-color: #F3603B;
+    width: 50px;
+    height: 40px;
+    border-radius: 40%;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 34px;
 }
 
 section article.seis div.progress{
-    width: 100%;
+    width: 400px;
     display: flex;
     justify-content: flex-start;
    
@@ -281,38 +312,24 @@ section article.seis div.progress{
     text-align: center;
     margin: 40px;
 }
+
+
+section.comentarios article p{
+    width: 300px;
+    font-weight: 700, bold;
+    font-style: normal;
+    font-size: 16px;
+    color: #B3B2B7;
+    padding: 10px;
+    order:3;
+  
+}
 section.comentarios{
     display: flex;
-    position: relative;
-    height: 200px;
-
+    justify-content: space-evenly;
 
 }
-section.comentarios article p{
-    width: 25vw;
-    font-weight: 700, bold;
-    font-style: normal;
-    font-size: 12px;
-    color: #B3B2B7;
-   
 
-   
-    
-}
-section.comentarios article h2{
-    font-weight: 700, bold;
-    font-style: normal;
-    font-size: 14px;
-   
-}
-section.comentarios article{
- 
-    width: 30vw;
-    height: 219px;
-    padding: 100px 20px 40px 20px;
-    margin-top: 7%;
-
-}
 .superior{
     display: flex;
     flex-direction: column;
@@ -329,13 +346,12 @@ section.comentarios article{
     margin-bottom: 50px;
 }
 
-.primercomentario img{
+.comentarios img{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     margin-top:0px;
-    margin-left: 13%;
+    margin-left: 0%;
     z-index: 100;
 
 }
@@ -361,13 +377,17 @@ section.comentarios article{
  
 }
 
-.primercomentario p{
-    font-weight: 600;
-    font-style: normal;
-    font-size: 20px;
-   
-}
 
+.primercomentario,.segundocomentario,.tercerocomentario{
+    width: 300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+section.comentarios article{
+    width: 300px;
+    height: 200px;
+}
 section.comentarios h2{
     margin-bottom: 20px;
 }
@@ -445,40 +465,51 @@ button.startedpie:hover{
     color: black;
 }
 
-
-
-
 footer{
+    
     width: 100vw;
     height: 200px;
     background-color: #F3613C;
     color: white;
     padding: 30px 0;
     display: flex;
+    justify-content: space-evenly;
    
 }
+
+
+
+
 footer div.footertext{
-    width: 350px;
-    margin-left: 210px;
-    margin-top: 34px;
-    margin-bottom: 64px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
-   
-   
+    font-size: 30px; 
+ 
+}
+footer div.footertext div{
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px; 
+ 
 }
 footer button.startedpie{
     width: 150px;
     height: 34px;
     background-color: white;
     margin-right:220px;
-    margin-top:60px;
+    margin-top:40px;
     margin-bottom:90px;
+    color: black;
 }
 footer.down{
     width: 100vw;
-    height: 200px;
+    height: 250px;
     background-color: black;
     display:flex;
     flex-direction: column;
@@ -554,7 +585,9 @@ display: flex;
     align-items: center;
 }
 
-@media (max-width: 375px) {
+
+
+@media ( max-device-width: 375px) {
 
     html{
       font-size: 18px;
@@ -571,80 +604,82 @@ display: flex;
         display: block;
         
      }
-    
-     section article.uno div.boxuno h1{
-        font-weight: 700, bold;
+     footer{
+        width: 400px;
+        height: 200px;
+        background-color: #F3613C;
+        color: white;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+     }
+     
+     footer button.startedpie {
+        width: 150px;
+        height: 34px;
+        background-color: white;
+       margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: 90px;
+    }
+    footer.down div.allcolumn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+    footer.down {
+        width: 370px;
+        height: 500px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        width: 370px;
+        height: 200px;
+        background-color: #F3613C;
+        color: white;
+        padding: 10px 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
+    footer div.footertext {
+        width: 270px;
+        margin-left: 20px;
+        margin-top: 150px;
+        margin-bottom: 60px;
+        font-weight: 500;
         font-style: normal;
         font-size: 30px;
-        margin-bottom: 20px;
-        width: 79.5%;
-       
-       }
-       section article.uno div.boxuno p{
-        font-weight: 500, normal;
-        font-size: 14px;
-        margin-bottom: 20px;
-       
-       }
-        
-        /*section article.tres {
-            width: 365px;
-           
-            }
-          section article.tres div.boxtres h2{
-             font-weight: 700, bold;
-             font-style: normal;
-             font-size: 30px;
-             margin-bottom: 20px;
-             width: 79.5%;
-            
-            }
-            section article.tres div.boxtres p{
-             font-weight: 500, normal;
-             font-size: 14px;
-             margin-bottom: 20px;
-             background-color: red;
-            }
-        section.comentarios div:nth-child(1) {
-            display: none;
-          }
-          section.comentarios div:nth-child(3) {
-            display: none;
-          }
-          main section div.inicio{
-            display: flex;
-           flex-direction: column;
-           align-self: auto;
-       }main section div.inicio{
-     display: flex;
-    flex-direction: column;
-    align-self: auto;
-}
-
-    
-
-footer{
-    width: 50vw;
-    height: 300px;
-    background-color: #F3613C;
-    color: white;
-    padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-  }
-  
-  
-  /*@media (max-width: 730px) {
-  
-  
-    section article{
-      width: 70%;
+        padding-right: 20px;
     }
-    html{
-        font-size: 15px;
-      }
-  
- */
+    main button.startedpie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding-right: 20px;
+        margin-left: 80px;
+    }
+    footer div.listaunoydos{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+    .clasedown{
+        
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
+    
